@@ -119,7 +119,7 @@
                 this.form = {};
             },
             save() {
-                if (this.form.id) {//有id就更新
+                if (this.form.id) {     //有id就更新
                     request.put("/user", this.form).then(res => {
                         console.log(res)
                         if (res.code === '0') {
